@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-CSS</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+        }
+        .container {
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            background: linear-gradient(0deg,#000,#262626);
+            position: relative;
+            text-align: center;
+        }
+        .container:before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#fff000,#ff0000,#fb0094,#0000ff,#00ff00,#fff000,#ff0000);
+            background-size: 400%;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            z-index: -1;
+            animation-name: lab;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            
+        }
+        p.test1 {
+            position: absolute;
+            font-family: Verdana, sans-serif;
+            font-size: 25px;
+            color: darkgrey;
+            text-transform: uppercase;
+            left: 10px;
+            animation-name: lab-1;
+            animation-duration: 0.2s;
+            animation-iteration-count: infinite;
+        }   
+        p.test2 {
+            position: relative;
+            font-family: Verdana, sans-serif;
+            font-size: 25px;
+            color: darkgrey;
+            text-transform: uppercase;
+            top: 80px;
+            animation-name: lab-2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }   
+        p.test3 {
+            display: block;
+            position: relative;
+            font-family: Verdana, sans-serif;
+            font-size: 25px;
+            color: darkgrey;
+            text-transform: uppercase;
+            top: 190px;
+            animation-name: lab-3;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        } 
+       
+        @keyframes lab {
+            0% {
+                background-position: 0 0;
+                }
+            50% {
+                background-position: 100% 0;
+                }  
+            100% {
+                background-position: 0 0;
+                }
+        }
+
+        @keyframes lab-1 {
+            from {
+                color: darkgrey;
+                text-shadow: 0 0 5px lightgray;
+            }
+            to {
+                color: whitesmoke;
+                text-shadow: 0 0 5px white;
+            }
+        }
+        @keyframes lab-2 {
+            from {
+                color: darkgrey;
+                text-shadow: 0 0 5px lightgray;
+                top: 80px;
+            }
+            to {
+                color: whitesmoke;
+                text-shadow: 0 0 5px white;
+                top: 200px;
+            }
+        }
+
+        @keyframes lab-3 {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 100;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="bordertest">
+            <p class="test1">background color</p>
+            <p class="test2">position-relative</p>
+            <p class="test3">hide and show</p>
+        </div>
+    </div>
+
+</body>
+</html>

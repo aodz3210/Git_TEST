@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab tooltip</title>
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 3px dotted black;
+            font-size: 50px;
+        }
+/************* tooltip text ******************/
+        .tooltiptext {
+            visibility: hidden;
+            width: 500px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+/************* tooltip position ******************/
+            position: absolute;
+            z-index: 1;
+            left: -70px;
+            top: 80px;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+
+</head>
+
+<body style="text-align: center;">
+    <div>
+        <h1>Tooltips คือ ข้อมูลเพิ่มเติมที่จะโชว์เมื่อทำการเลื่อนเม้าไปชี้ที่ element นั่นๆ</h1>
+    </div>
+    <div>
+        <h2>Try to move your mouse on "Tooptips showcase" as below.</h2>
+    </div>
+    <!-- Tooltip showcase container -->
+    <div class="tooltip">Tooltips Showcase
+        <span class="tooltiptext"> this is tooltips text </span>
+    </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB HTML Structure</title>
+</head>
+
+<body>
+    <h1>3.ให้หาว่า input type มีอะไรบ้าง และแต่ละ type แตกต่างกันอย่างไร</h1>
+    <table>
+        <tr>
+            <th>input</th>
+            <th>attribute</th>
+            <th>differentiation</th>
+        </tr>
+        <tr>
+            <td>button</td>
+            <td>text or alert , href</td>
+            <td>สร้างปุ่มสำหรับกดเพื่อลิงค์ไปยังภายนอก</td>
+        </tr>
+        <tr>
+            <td>checkbox</td>
+            <td>text or id name value</td>
+            <td>สำหรับสร้างตัวเลือกแบบ ติ๊กถูกโดยสามารถจำกัดจำนวนตัวเลือกได้หรือไม่จำเป็นต้องเลือกก็ได้เช่นกัน</td>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>text or id name</td>
+            <td>สำหรับเลือกสีต่างๆ โดยหลังจากเลือกสีนั่นๆจะโชว์บนตัว Element </td>
+        </tr>
+        <tr>
+            <td>date</td>
+            <td>text or id name min-max</td>
+            <td>ตัวเลือกวัน เดือน ปี สามารถกำหนดขอบเขต จำกัดช่วงเวลาได้</td>
+        </tr>
+        <tr>
+            <td>datetime</td>
+            <td>text or id name value min-max</td>
+            <td>ตัวเลือกวัน เดือน ปี และเวลา สามารถกำหนดขอบเขต จำกัดช่วงเวลาได้</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>text or id name</td>
+            <td>กล่องข่้อความสำหรับกรอก email สร้างข้อจำกัดเพื่อกรอก email เท่านั่น</td>
+        </tr>
+        <tr>
+            <td>file</td>
+            <td>text or id name</td>
+            <td>ปุ่มเพื่อสร้าง browser สำหรับการอัพโหลดไฟล์</td>
+        </tr>
+        <tr>
+            <td>hidden</td>
+            <td>text or id name value</td>
+            <td>สร้างตัวเลือกสำหรับเลือกเดือนและปี สามารถกำหนดขอบเขตระยะเวลาได้</td>
+        </tr>
+        <tr>
+            <td>image</td>
+            <td>text or src,id,name,width,height</td>
+            <td>สร้างกล่องสำหรับใส่รูปภาพ โดยสามารถจำกัดขนาดของรูปภาพได้</td>
+        </tr>
+        <tr>
+            <td>month</td>
+            <td>text or id,name</td>
+            <td>สำหรับสร้างตัวเลือก เดือนและปี สามารถจำกัดขอบเขตระยะเวลาได้</td>
+        </tr>
+        <tr>
+            <td>number</td>
+            <td>text or id,name,min-max</td>
+            <td>สร้างตัวเลือกสำหรับใส่จำนวนเป้นตัวเลข โดยสามารถกำหนดขอบเขตระหว่างตัวเลขนั่นๆได้</td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td>text or id,name</td>
+            <td>สำหรับสร้างกล่องใส่ Password โดยจะซ่อน text ที่เราพิมพ์ (สามารถแสดงได้เช่นกัน)</td>
+        </tr>
+        <tr>
+            <td>radio</td>
+            <td>text or id name value</td>
+            <td>สำหรับสร้างตัวเลือกแบบติ๊ก โดยมีข้อจำกัดเลือกได้อย่างใดอย่างหนึ่ง</td>
+        </tr>
+        <tr>
+            <td>range</td>
+            <td>text or id,name,value min-max</td>
+            <td>สร้างปุ่มป้อนค่าตัวโดยตัวเลือกควบคุมแบบสไลด์ สามารถกำหนดค่าต่ำสุดและสูงสุดได้</td>
+        </tr>
+        <tr>
+            <td>reset</td>
+            <td>text or id name value</td>
+            <td>สำหรับรีเซ็ทค่าที่อยู่แบบฟอร์มทั่งหมด</td>
+        </tr>
+        <tr>
+            <td>search</td>
+            <td>text or id,name for searching</td>
+            <td>สร้างกล่องสำหรับพิมพ์ข้อความเพื่อใช้ค้นหาไปยังลิงค์ภายนอก</td>
+        </tr>
+        <tr>
+            <td>submit</td>
+            <td>text or id name value or link</td>
+            <td>กำหนดปุ่มสำหรับยื่นแบบฟอร์มไปสู่ตัวจัดการแบบฟอร์ม</td>
+        </tr>
+        <tr>
+            <td>tel</td>
+            <td>text or id name pattern</td>
+            <td>กล่องข่้อความสำหรับใส่เบอร์โทรศัพท์สามารถกำหนดรูปแบบตัวเลขได้</td>
+        </tr>
+        <tr>
+            <td>text</td>
+            <td>text or id.name</td>
+            <td>กล่องใส่ข้อความ สามารถจำกัดจำนวนตัวอักษรได้</td>
+        </tr>
+        <tr>
+            <td>time</td>
+            <td>text or id name value</td>
+            <td>สร้างตัวเลือกเวลา ชม นาที วินาที สามารถกำหนดขอบเขตของช่วงเวลาได้</td>
+        </tr>
+        <tr>
+            <td>url</td>
+            <td>text or id,name</td>
+            <td>กล่องข้อความสำหรับใส่ ลิงค์ URL Address </td>
+        </tr>
+        <tr>
+            <td>week</td>
+            <td>text or id name value</td>
+            <td>ตัวเลือกสำหรับเลือกจำนวนสัปดาห์ เดือน และปี สามารถกำหนดขอบเขตตัวเลือกได้</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

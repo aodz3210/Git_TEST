@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB News</title>
+
+    <!-- อ้างอิงจาก sanook.com/news เพิ่มความน่าสนใจด้วยการออกแบบโดยจัด Content แบบแบ่งช่องการ์ตูนญี่ปุ่น 
+        เพื่อสร้างความแปลกใหม่ ชวนติดตาม พื้นหลังสีดำ จะทำให้อ่านได้ง่ายและปลอดภัยต่อสายตามากกว่า
+        และตามความคิดเห็นส่วนตัว การดึงดูดให้คนหยุดดู website content ที่มีคู่แข่งมากมาย 
+        ควรจะจบใน 1 หน้ากระดาษ แบบที่สามรถ เห็นได้ด้วยตาภายในครั้งเดียว ควรตัดสิ่งที่ผู้ใช้งานน้อยและทำเป็นลิ้งภายนอกแทน-->
+
+    <style>
+        body {
+            margin: 0%;
+            background: black;
+        }
+
+        .container {
+            max-width: 100%;
+            display: grid;
+            padding: 1rem;
+            margin: 1rem;
+            grid-template-columns: repeat(3 ,1fr);
+            grid-template-rows: repeat(7 ,200px);
+            grid-gap: 1em;
+            
+        }
+        .gridtext {  
+            border: 1px solid white;
+            color: white;
+            
+        }
+        div {
+            text-align: center;
+            font-size: 50px;
+        }
+       
+    .gridheading {
+        grid-column-start: span 2;
+    }
+    .gridtype {
+        align-self: start;
+    }
+    .grid1 {
+        grid-column-start: span 3;
+    }
+    .grid2 {
+        grid-column-start: span 2;
+    }
+
+    
+    .grid6  {
+        grid-area: 5/1/7/3;
+    }
+    .grid7  {
+        grid-area: 
+        4/3/7/4;
+    }
+    .footer  {
+        grid-column-start: 3 span;
+    }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <header class="container"> 
+            
+            <div class="gridtext gridheading">heading</div>
+            <div class="gridtext gridtype">ตัวเลือกประเภทข่าว</div>
+            <div class="gridtext grid1">ข่าวเด่น</div>
+            <div class="gridtext grid2">ข่าวเด่นรอง</div>
+            <div class="gridtext grid3">ข่าวรอง</div>
+            <div class="gridtext grid4">ข่าวรอง</div>
+            <div class="gridtext grid5">ข่าวอื่นๆ แบบสไลด์</div>
+            <div class="gridtext grid6">สรุป โควิดประจำวัน</div>
+            <div class="gridtext grid7">ข่าวที่มีคนดูสูงสุดเรียงตามลำดับ</div>
+            <div class="gridtext footer">รายระเอียดอื่นๆและ contect website ช่องทางติดตามอื่นๆ</div>
+
+        
+    </header>
+
+        
+</body>
+</html>

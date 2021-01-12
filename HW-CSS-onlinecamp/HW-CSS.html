@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW CSS</title>
+
+    <link rel="stylesheet" href="/HW-CSS-onlinecamp/mystyle.css">
+
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <!-- first homework -->
+            <th>CSS Syntax</th>
+            <th>CSS Type</th>
+            <th>Selector</th>
+            <th>Combinator</th>
+        </tr>
+        <tr>
+            <td>1. Selector</td>
+            <td>1.Inline</td>
+            <td>1.simple selector</td>
+            <td>1.Descendant Selector(Space)</td>
+        </tr>
+        <tr>
+            <td>2.Property</td>
+            <td>2.Internal</td>
+            <td>2.Cobinator selectors</td>
+            <td>2.Child Selector(>)</td>
+        </tr>
+        <tr>
+            <td>3.value</td>
+            <td>3.External</td>
+            <td>3.Pesudo-class seletor</td>
+            <td>3.adjacent sibling selector (+)</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>*</td>
+            <td>4.Pesudo-elements seletors</td>
+            <td>4.general sibling seletor (~)</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>*</td>
+            <td>5.Attribute selectors</td>
+            <td>*</td>
+        </tr>
+
+    </table>
+        <!-- secord homework -->
+    <h1>CSS Syntax Exemple</h1>
+    <div>
+        p { color: red;}
+        <div>
+            'p' is seletor <br>
+            'color' is Property <br>
+            'red' is value
+        </div>
+        <hr>
+        <div>
+            <h1>CSS type Exemple</h1>
+            <p><b>1.Inline</b> = &#60;p <mark>style="color: red;"&#62;</mark>&#60;/p>
+                <p><b>2.Internal</b> = <br> &#60;header></p>
+                    <p>&#60;style> <mark> body {color : red;}</mark> &#60;/style> 
+                        <p> &#60;/header> **สรุปคือการใส่ style ในส่วนของ header ในไฟล์ html นั่นๆ</p>
+            <p><b>3.External</b> = &#60;link rel="stylesheet" href="/mystyle.css"> *ใส่ element อ้างอิง style ภายนอก จากตัวอย่างคือ ทำการเรียกใช้งานคำสั่ง CSS จากไฟล์ Mystyle.css ผ่านการลืงค์ภายนอก โดยนิยมใส่ link ในส่วนของ header</p>
+                <p>ตัวอย่างในไฟล์ mystyle.css = body {color :red;} (ทำให้ font ในส่วน body เป็นสีแดง)</p>
+                        <hr>         
+            </div>
+
+            <div>
+                <h1>Selector Exemple</h1>
+                <P>1.simple selector = ประกอบไปด้วย Element, id, class, group และ Universal </p>
+                <span>1.1 Element Selector คือ element ที่เป็นองค์ประกอบพื้นฐานที่ใช้ใน HTML เช่น P, DIV, SPAN เป็นต้น </span>
+                <p>1.2 id คือ การกำหนด Attribute เพื่อเป็นองค์ประกอบเฉพาะของ HTML นั่นๆ โดยตัวอักษรที่ใช้ประกอบขึ้นมาต้องไม่ซ้ำกับองค์ประกอบหลัก โดยจะใส่ # นำหน้าตัวอักษรในการเรียกใช้งาน เช่น ID=mystyle ในส่วนการใช้งานจะเป็น #mystyle{Property:valuel;}</p>
+                <p>1.3 Class ใช้งานเหมือน ID เพียงแต่ใช้ . แทน #</p>
+                <p>1.4 group คือ การใช้งานหลายๆ element selector ในคราวเดียวเช่น h1, h2, p { Property:value; } </p>         
+                <p>1.5 Universal คือ การใช้ element ที่จะส่งผลกับทุกองค์ประกอบในหน้า HTML โดยตรง โดยใช้ * เป็นตัวแทนของ element ในการกำหนด เช่น * {Margin: 0;} (คือการเริ่มต้นหน้า HTML ด้วย margin=0%)</p>
+                    <hr>
+                
+            </div>
+
+            <div>
+                <h1>Cobinator Exemple</h1>
+                <p>1.แบบ Descendant Selector คือการกำหนด element selector แบบมากกว่า 2 selector โดยมีเงื่อนไขว่า selector ดังกล่าวต้องเป็นลูกหลานกัน โดยใช้การเว้นวรรค เช่น Div h1 {property:value;} เป็นต้น</p>
+                <p>2.แบบ Child Selector คือการกำหนด element selector ที่อยู่ภายใต้เงื่อนไขว่าเป็นลูกของ element หลัก โดยใช้เครื่องหมาย &#62; เป็นตัวบ่งชี้ เช่น Div &#62; h1 คือ การเลือก element h1 ที่ต้องเป็นลูกหลานของ element div เท่านั่น </p>
+                <p>3.แบบ Adjacent Sibling Selector (+) คือการเลือก element selector ที่อยู่ในระดับพี่น้องในตำแหน่งถัดไป โดยจะเป็นการเลือก element ที่อยู่ถัดไปของ element ก่อนหน้า โดยใช้ + เป็นเครื่องหมายบ่งชี้ เช่น div+p จะหมายถึง P selector ที่อยู่ถัดไปจาก element div เท่านั่น</p>
+                <p>4.แบบ General Sibling Selector (~) คือการเลือก element selector ที่อยู่ในระดับพี่น้อง ถัดไปทั้งหมด โดยใช้ตัว (~) ในการบ่งชี้ เช่น div ~ p หมายถึง p element ที่อยู่ถัดจาก div ทั้งหมด คือ selector </p>
+                <hr>
+            </div>
+
+    </div>
+
+        <div>
+            <table>
+                <tr>
+                    <th>
+                        Property
+                    </th>
+                    <th>
+                        Value
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        คุณลักษณะ
+                    </td>
+                    <td>
+                        ค่าที่กำหนด
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h1>กลุ่มของ Property</h1>
+            <p>1.Property for content คือคุณลักษณะ ที่เปลี่ยนแปลง content นั่นๆ เช่น สี,ขนาด,แบบตัวอักษร เป็นต้น</p>
+            <p>2.Property for border คือคุณลักษณะตัวกล่อง,โดยรอบหรือด้านใดด้านหนึ่งของรูปแบบกล่อง Element</p>
+            <p>3.Property for padding คือคุณลักษณะขนาดระหว่าง content และ border</p>
+            <p>4.Property for margin คือคุณลักษณะขนาดระหว่าง boder และ ขอบเขตของ html</p>
+            <p>5.Property for element คือคุณลักษณะของการจัดวางรูปแบบของ element</p>
+        </div>  
+        <hr>
+        <div>
+            <h1>Unit ของ Value</h1>
+            <p>1.Absolute lenghts คือ ค่าที่กำหนดแบบตายตัวตามหน่วยที่ใช้งาน เช่น cm,px,mm เป็นต้น</p>
+            <p>2.relative lenghts คือ ค่าที่กำหนดโดยอ้างอิงจากองค์ประกอบอื่นๆ เช่น em(อ้างอิงตามขนาดฟอนต์),ex(ตามความสูงของฟอนต์) เป็นค้น</p>
+        </div>
+        <hr>
+
+</body>
+</html>

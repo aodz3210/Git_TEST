@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB.shoping Web</title>
+
+
+    <!-- อ้างอิงจากเวป Esty.com บางครั้ง dropdown มันทำงานช้า หรือ bug ที่ไม่ทันเลือกลิสรายการ dropdown จะหายไป
+        ทำให้มีความรู้สึกว่าอยากเอา dropdown ออกแล้วใส่เป็น content รูปภาพโดยสามารถเลือกกลุ่มหลักๆ
+        หลังจากนั้นจะลิงค์ไปยังหน้าสินค้าพร้อมกับมีตัวเลือก ลิสย่อยๆอีกที
+
+        poppular item ไม่จำเป็นต้องเยอะ อาจจะ 5-6 ชิ้นและทำเป็นสไลด์แทน
+        ตัดบางส่วนออก ใส่เป็น favorite item น่าจะเหมาะกว่า 
+        ในกรณีที่เราสนใจสินค้าประเภทนั้นๆ อาจเผลอมองข้ามตัวเลือกอื่นๆ เพราะมันมีจำนวนเยอะมาก
+
+        ส่วนที่เหลือเห็นสมควรที่จะเก็บไว้ตามเดิม
+    -->
+    <style>
+    
+        .container {
+            max-width: 100%;
+            margin: 5px 5px;
+            padding: 5px 5px;
+            background: #e6e6e6;
+        }
+        .gridcontent {
+            display: grid;
+            grid-template-columns: repeat(8 ,1fr);
+            grid-template-rows: repeat(22 , 50px);
+            border: 1px solid black;
+            grid-gap: 1rem;
+        }
+
+        .search {
+            grid-column-start: 5 span;
+        }
+        .loginbasket {
+            grid-column-start: 2 span;
+        }
+        .type1 {
+            grid-area: 2/1/4/5;
+        }
+        .type2 {
+            grid-area: 2/5/4/9;
+        }
+        .type3 {
+            grid-area: 4/1/6/5;
+        }
+        .type4 {
+            grid-area: 4/5/6/9;
+        }
+        .type5 {
+            grid-area: 6/1/8/5;
+        }
+        .type6 {
+            grid-area: 6/5/8/9;
+        }
+        .type7 {
+            grid-area: 8/1/10/5;
+        }
+        .type8 {
+            grid-area: 8/5/10/9;
+        }
+        .poppular {
+            grid-column-start: 8 span;
+            grid-row-start: 2 span;
+        }
+        .favorite {
+            grid-column-start: 8 span;
+            grid-row-start: 2 span;
+        }
+        .whatis {
+            grid-column-start: 8 span;
+            grid-row-start: 4 span;
+        }
+        .subscribe {
+            grid-column-start: 8 span;
+        }
+        .footer {
+            grid-column: 1/9;
+            grid-row-start: 4 span;
+        }
+        
+    
+
+    </style>
+
+</head>
+<body>
+    
+    <header class="container">
+        <div class="gridcontent">
+            <div class="gridcontent head">logo</div>
+            <div class="gridcontent search">ช่องค้นหา</div>
+            <div class="gridcontent loginbasket">ตระกร้าสินค้า</div>
+            <div class="gridcontent type1">jewelry&accessories</div>
+            <div class="gridcontent type2">clothing&shoes</div>
+            <div class="gridcontent type3">home&liveing</div>
+            <div class="gridcontent type4">wedding&party</div>
+            <div class="gridcontent type5">toy&enterainment</div>
+            <div class="gridcontent type6">art&collectibles</div>
+            <div class="gridcontent type7">craft supplies&tools</div>
+            <div class="gridcontent type8">vintage</div>
+            <div class="gridcontent poppular">Poppular Item</div>
+            <div class="gridcontent favorite">Favorite Item</div>
+            <div class="gridcontent whatis">What is Esty</div>
+            <div class="gridcontent subscribe">Subscribe</div>
+            <div class="gridcontent footer">footer</div>
+        </div>
+</body>
+</html>

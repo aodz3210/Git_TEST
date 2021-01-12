@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Animate-Lab2</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        p {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: whitesmoke;
+        }
+        div.default {
+            position: relative;
+            width: 100px;
+            height: 50px;
+            background: chocolate;
+            margin: 50px 0;
+            left: 50px;
+            animation: default 5s 1;
+        }
+        div.direction1 {
+            position: relative;
+            width: 150px;
+            height: 50px;
+            background: cadetblue;
+            margin: 150px 0px;
+            left: 50px;
+            animation: alt 5s 2 1s;
+            animation-direction: alternate;
+        }
+        div.direction2 {
+            position: relative;
+            width: 150px;
+            height: 50px;
+            background:lightcoral;
+            margin: 150px 0;
+            left: 50px;
+            animation: rev 5s 2 2s;
+            animation-direction: reverse;
+        }
+        div.direction3 {
+            position: relative;
+            width: 150px;
+            height: 50px;
+            background: darkolivegreen;
+            margin: 50px 0;
+            left: 50px;
+            animation: alt-rev 5s 2 3s;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes default {
+            from {left: 50px;}
+            to {left: 500px;}
+
+        }
+        @keyframes alt {
+            0% {left: 50px; top: 0;}
+            25% {left: 250px; top: 0;}
+            50% {left: 250px; top: 100px;}
+            75% {left: 50px; top: 100px;}
+            100% {left: 50px; top: 0;}
+        }
+        @keyframes rev {
+            0% {left: 50px; top: 0;}
+            25% {left: 250px; top: 0;}
+            50% {left: 250px; top: 100px;}
+            75% {left: 50px; top: 100px;}
+            100% {left: 50px; top: 0;}
+        }
+        @keyframes alt-rev {
+            0% {left: 50px; top: 0;}
+            25% {left: 250px; top: 0;}
+            50% {left: 250px; top: 100px;}
+            75% {left: 50px; top: 100px;}
+            100% {left: 50px; top: 0;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="default">
+            <p>default</p>
+        </div>
+        <div class="direction1">
+            <p>alternate</p>
+        </div>
+        <div class="direction2">
+            <p>reverse</p> 
+        </div>
+        <div class="direction3">
+            <p>alternate-reverse</p> 
+        </div>
+    </div>
+</body>
+</html>

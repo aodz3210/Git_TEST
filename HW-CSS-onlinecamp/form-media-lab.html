@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-media-LAB</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: verdana;
+        }
+        body {
+            background: url(https://www.muralswallpaper.com/app/uploads/cream-pink-rose-vintage-floral-wallpaper-mural-Plain-scaled.jpg);
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+        .flex-bar {
+            display: flex;
+            justify-content: space-between;
+        }
+        div:nth-child(1).fixed-content {
+            position: fixed;
+            left: 0;
+            color: tomato;
+        }
+        div:nth-child(2).fixed-content {
+            position: fixed;
+            right: 0;
+            color: tomato;
+            font-weight: bold;
+        }
+        .container-form {
+            display: inline-block;
+            background: whitesmoke;
+            border-radius: 10px;
+            height: auto;
+        }
+        
+        .grid-template {
+            display: grid;
+            
+        }
+        input {
+            display: inline-block;
+            border: 1px solid lightgray;
+            border-radius: 10px
+        }
+        input.input-content {
+            border: 1px solid lightgray;
+            border-radius: 10px
+        }
+        textarea {
+            border: 1px solid lightgray;
+            border-radius: 10px
+        }
+        a {
+            display: inline-block;
+            margin: 40px 0;
+            text-decoration: none;
+            color: tomato;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .section-content-grid {
+            display: grid;
+        }
+        .section-content h1 {
+            font-size: 50px;
+            color: tomato;
+        }
+        
+
+        @media only screen and (min-width: 769px) {
+            body {
+                margin: 0 80px;
+                background-size: 100% 37%;
+            }
+            .container-form {
+                margin: 60px 0;
+                width: 800px;
+            }
+            .container-form h1 {
+                padding-top: 40px;
+            }
+            .grid-template {
+                grid-template-columns: repeat(2 ,1fr);
+                margin-top: 50px;
+            }
+            input {
+                padding: 12px 80px;
+                margin: 20px 0;
+            }
+            input.input-content {
+                padding: 12px 282px;
+            }
+            textarea {
+                padding: 200px 282px;
+                margin: 8px 0;
+            }
+            label {
+                display: inline-block;
+                position: absolute;
+                transform: translateX(-75%);
+                color: gray;
+            }
+            label.label-text {
+                display: inline-block;
+                position: absolute;
+                transform: translateX(-360px);
+                color: gray;
+            }
+            .text-header {
+            font-size: 50px;
+            }
+            .section-content-grid {
+            grid-template-columns: repeat(2 ,1fr);
+            margin: 60px 0;
+            grid-gap: 20px;
+            }
+            .section-content h1 {
+            font-size: 50px;
+            color: tomato;
+            }
+            
+        }
+
+        @media only screen and (min-width: 481px) and (max-width: 768px) {
+           body {
+                margin: 0 30px;
+                background-size: 100% auto;
+           }
+           .container-form {
+                margin: 40px 0;
+                width: auto;
+            }
+            .grid-template {
+                grid-template-columns: auto;
+                margin-top: 30px;
+            }
+            input {
+                padding: 10px 50px;
+                margin: 10px 0;
+            }
+            input.input-content {
+            padding: 6px auto;
+            }
+            textarea {
+                margin: 8px 0;
+            }
+            label {
+                display: inline-block;
+                color: black;
+                font-size: 15px;
+            }
+            label.label-text {
+                display: inline-block;
+                color: black;
+                font-size: 15px;
+            }
+            .text-header {
+            font-size: 30px;
+            }
+            .section-content-grid {
+            grid-template-columns: auto;
+            margin: 30px 0;
+            grid-gap: 10px;
+            }
+            .section-content h1 {
+            font-size: 30px;
+            color: tomato;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            body {
+                background-size: 100% auto;
+            }
+            .container-form {
+                margin: 20px 0;
+                width: auto;
+            }
+            .grid-template {
+                grid-template-columns: auto;
+                margin-top: 10px;
+            }
+            input {
+                padding: 5px 15px;
+                margin: 5px 0;
+            }
+            label {
+                display: inline-block;
+                color: black;
+                font-size: 15px;
+            }
+            label.label-text {
+                display: inline-block;
+                color: black;
+                font-size: 15px;
+            }
+            .text-header {
+            font-size: 30px;
+            }
+            .section-content-grid {
+            grid-template-columns: auto;
+            }
+            .section-content h1 {
+            font-size: 30px;
+            color: tomato;
+            }
+            
+        
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+        <div class="nav-content">
+            <nav class="flex-bar">
+                <div class="fixed-content">
+                    <h1>P</h1>
+                </div>
+                <div class="fixed-content">
+                    <p>About</p>
+                </div>
+            </nav>
+        </div>
+        <div class="text-header">
+            <h1 style="color: black;">Pimclick</h1>
+            <h1 style="color: tomato;">creative digital agency</h1>
+        </div>
+    <form class="container-form">
+        <h1>Contact Us <span style="color: tomato;">today</span></h1>
+        <div class="grid-template">
+            <div>
+                
+                <label>Your Name (required)</label><br>
+                <input type="text">
+            </div>
+            <div>
+                <label>Your Email (required)</label><br>
+                <input type="text">
+            </div>
+        </div>
+
+            <div>
+                <label class="label-text">Subject</label><br>
+                <input class="input-content" type="text">
+                <br>
+                <label class="label-text">Your Massage</label><br>
+                <textarea name="" id="" cols="20" rows="10"></textarea>
+            </div>
+            <h2><a href="#">SEND</a></h2>
+    </form>
+    <div class="container">
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo earum molestiae obcaecati mollitia sunt consequuntur sapiente ducimus dolor omnis? Exercitationem veritatis sequi repudiandae suscipit molestias ratione voluptatum dolor deserunt vel eligendi sit sapiente consequuntur voluptate dolorem in animi cumque, facere molestiae excepturi officia dolore esse veniam. Odit beatae suscipit dicta reprehenderit, esse vel quasi eveniet, minima ad excepturi consequuntur iure. Distinctio, magnam ut? Reiciendis pariatur porro inventore molestias rerum doloremque, veniam ut veritatis repellat eos recusandae quia libero maiores, dolorem doloribus eveniet aut officiis obcaecati laborum praesentium asperiores voluptate amet? Possimus eaque sapiente aperiam necessitatibus repellat molestias tenetur tempora beatae, temporibus, officia itaque doloribus. Dolorem quod vitae corporis corrupti ullam doloremque iusto maiores quisquam. Excepturi repellat labore cumque dicta ex corrupti dolore nostrum qui deleniti. Ab fugit illo quae error, illum eaque enim inventore similique. Maiores voluptates dolores nemo ab nesciunt voluptatum eaque aliquid ducimus optio tenetur iste commodi, delectus cum, similique ullam asperiores eum libero at aliquam doloremque. Dolore odit perspiciatis nemo provident nulla quisquam dolorum? Qui mollitia cumque nostrum eum nisi, corrupti ab consequatur reiciendis expedita, architecto repellendus quaerat error, obcaecati provident! Repudiandae eaque mollitia, dolores illo maxime quos enim aspernatur assumenda, dicta eligendi dignissimos labore. Laborum, ullam.</p>
+            </div>
+            <br>
+                <img src="https://www.screenalicious.com/wp-content/uploads/2020/06/fighting-fish-wallpaper-649x365.jpg" alt=""><br>
+
+        <div class="section-content-grid">  
+            <div class="section-content">
+                <h1>Title</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non pariatur sit quidem maiores alias velit dignissimos suscipit maxime illo ab, magni, assumenda harum tempora recusandae obcaecati ullam laborum placeat aut.</p>
+            </div>
+            <div class="section-content">
+                <h1>Title</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non pariatur sit quidem maiores alias velit dignissimos suscipit maxime illo ab, magni, assumenda harum tempora recusandae obcaecati ullam laborum placeat aut.</p>
+            </div>
+            <div class="section-content">
+                <h1>Title</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non pariatur sit quidem maiores alias velit dignissimos suscipit maxime illo ab, magni, assumenda harum tempora recusandae obcaecati ullam laborum placeat aut.</p>
+            </div>
+            <div class="section-content">
+                <h1>Title</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non pariatur sit quidem maiores alias velit dignissimos suscipit maxime illo ab, magni, assumenda harum tempora recusandae obcaecati ullam laborum placeat aut.</p>
+            </div>
+            <div class="section-content">
+                <h1>Title</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non pariatur sit quidem maiores alias velit dignissimos suscipit maxime illo ab, magni, assumenda harum tempora recusandae obcaecati ullam laborum placeat aut.</p>
+            </div>
+            <div class="section-content">
+                <h1>Title</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non pariatur sit quidem maiores alias velit dignissimos suscipit maxime illo ab, magni, assumenda harum tempora recusandae obcaecati ullam laborum placeat aut.</p>
+            </div>
+        </div>
+    </div>          
+            <h2 style="color: tomato;">Title</h2>
+            <p style="margin-bottom: 100px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam aut fugiat nam explicabo assumenda laborum soluta fugit velit placeat? Quam, quidem a accusamus id consectetur commodi voluptatum asperiores dicta expedita?</p>
+</body>
+</html>

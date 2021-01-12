@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media LAB</title>
+    <style>
+        
+        body {
+            text-align: center;
+            }
+        .container {
+            display: grid;
+            justify-content: center;
+            }
+        .grid-column {
+            display: grid;
+            }
+        img {
+            width: 80%;
+            height: auto;
+            margin-bottom: 5px;
+            border-radius: 30%;
+            }
+        
+        
+
+        @media only screen and (min-width: 769px) {
+            body {
+                max-width: 100%;
+                margin: 0 40px;
+            }
+            
+            .container {
+                grid-template-columns: auto;
+            }
+            .font-header {
+                font-size: 50px;
+            }
+            .grid-column {
+                grid-template-columns: repeat(3 ,1fr);
+                grid-gap: 5px;
+                margin-top: 20px;
+            }
+            .column-content {
+            border: 2px dotted black;
+            padding: 0 5px;
+            }
+            .footer {
+            border: 2px dotted black;
+            margin: 10px 0;
+            }
+        }
+
+        @media only screen and (min-width: 481px) and (max-width: 768px) {
+            .container {
+                grid-template-columns: auto;
+            }
+            .font-header {
+                font-size: 40px;
+            }
+            .grid-column {
+                grid-template-columns: repeat(2 ,auto);
+                grid-template-rows: repeat(2 ,auto);
+                grid-gap: 3px;
+                }
+            .column-content {
+                border: 1px dotted black;
+                padding: 0 3px;
+                }
+        }
+
+        @media only screen and (max-width: 480px) {
+            body {
+                background: #333;
+            }
+            .container {
+                grid-template-columns: auto;
+            }
+            .font-header {
+                font-size: 25px;
+                color: blanchedalmond;
+            }
+            .grid-column {
+                grid-template-columns: repeat(1 ,auto)
+            }
+            .column-content {
+                border: 1px dotted white;
+                color: blanchedalmond;
+            }
+            .footer {
+            border: 1px dotted black;
+            margin: 2px 0;
+            }
+        
+        }
+    </style>
+</head>
+<body>
+    <h1 class="font-header">Media query LAB</h1>
+    <img src="https://png.pngtree.com/illustrations/20190321/ourmid/pngtree-ink-painting-chinese-style-chinese-style-ink-illustration-scenery-png-image_33217.jpg" alt="">
+
+    <div class="container">
+        <div class="grid-column">
+            <div class="column-content">        
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae atque incidunt ullam ratione, iusto quidem recusandae amet ad rerum ducimus!</p>
+            </div>
+            <div class="column-content">        
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae atque incidunt ullam ratione, iusto quidem recusandae amet ad rerum ducimus!</p>
+            </div>
+            <div class="column-content">        
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae atque incidunt ullam ratione, iusto quidem recusandae amet ad rerum ducimus!</p>
+            </div>
+            <div class="column-content">        
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae atque incidunt ullam ratione, iusto quidem recusandae amet ad rerum ducimus!</p>
+            </div>
+            <div class="column-content">        
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae atque incidunt ullam ratione, iusto quidem recusandae amet ad rerum ducimus!</p>
+            </div>
+            <div class="column-content">        
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae atque incidunt ullam ratione, iusto quidem recusandae amet ad rerum ducimus!</p>
+            </div>
+        </div>
+    </div>
+
+
+            
+        
+        <div class="footer">
+            <h1>Footer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, reprehenderit libero nam placeat hic cum similique? Voluptas soluta id fugiat, quos quibusdam saepe magnam, maxime doloribus ex architecto cupiditate neque!</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

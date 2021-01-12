@@ -1,0 +1,114 @@
+
+
+table {
+    width: 100%;
+}
+table, th, td { 
+    border: 2px solid black;
+    text-align: center;
+}
+fieldset {
+    min-width: 500px;
+    max-width: 100%;
+    min-height: 50%px;
+    width: 650px;
+    height: 390px;
+    border-radius: 5px;
+    background: #e3e3e3;
+    margin: auto;
+    padding: 10px 2px;
+}
+form {
+    min-width: 500px;
+    max-width: 100%;
+    min-height: 50%;
+    width: 600px;
+    height: 355px;
+    background: white;
+    margin: auto;
+    padding: 18px;
+}
+div {
+    margin: 5px 0px;
+}
+.input1 {
+    max-width: 100%;
+    margin-left: 100px;
+}
+.input2 {
+    max-width: 100%;
+    margin-left: 77px;
+}
+.input3 {
+    max-width: 80px;
+    margin-left: 0px;
+}
+.importent-text {
+    color: red;
+}
+.content-text {
+    font-size: 18px;
+    margin-left: 105px;
+}
+.formsetup  {
+    background: #e3e3e3;
+    padding: 10px;
+    margin: 20px 0px;
+}
+.text-button {
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    background: #ffce01;
+    border-radius: 5px;
+}
+.select1 {
+    max-width: 100%;
+    width: 150px;
+    margin-left: 116px;
+}
+.input5 {
+    max-width: 100%;
+    display: none;
+}
+.input6 {
+    max-width: 100%;
+    margin-left: 47px;
+}
+span small {
+    margin-left: 117px;
+}
+.uploadlogo {
+    background: #e3e3e3;
+    padding: 3px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: grey;
+}
+.select2 {
+    max-width: 100%;
+    width: 150px;
+    margin-left: 53px;
+
+}
+.select3 {
+    max-width: 100%;
+    width: 150px;
+    margin-left: 56px;
+}
+.select4 {
+    max-width: 100%;
+    width: 150px;
+    margin-left: 55px;
+}
+.select5 {
+    max-width: 100%;
+    width: 100px;
+    margin-left: 60px;
+}
+.input10 {
+    max-width: 100%;
+    margin-left: 77px;
+}
+

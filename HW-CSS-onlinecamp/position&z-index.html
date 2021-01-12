@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            border: 3px dotted black;
+            width: 500px;
+        }
+        .border-table, th, td {
+            border: 1px solid black;"
+        }
+        .ex-static {
+            position: static;
+            width: 150px;
+            height: 150px;
+            background: lightseagreen;
+        }        
+        .ex-relative {
+            position: relative;
+            /* ให้ขยับจากด้านบนและด้านซ้ายไป20px */
+            top: 20px;
+            left: 20px;
+            width: 150px;
+            height: 150px;
+            background: lightseagreen;
+        }         
+        .ex-fixed {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            background: lightseagreen;
+            top: 600px;
+            left: 400px;
+        }
+        .ex-absolute {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            bottom: 80px;
+            background: lightcoral;
+            z-index: -1;
+        }
+        .ex-sticky {
+            position: sticky;
+            width: 150px;
+            height: 150px;
+            background: lightseagreen;
+            bottom: 0;
+            left: 250px;
+        }
+    </style>
+
+</head>
+
+    <body>
+        <table class="border-table">
+            <tr>
+                <th>position</th>
+                <th>z-index</th>
+            </tr>
+            <tr>
+                <td>การกำหนดจุดพื้นที่ให้กับ element</td>
+                <td>การกำหนด ลำดับความสำคัญในการแสดงผลให้กับ element ในกรณีที่มีการทับซ้อนกัน</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <div>
+            <h2>ตัวอย่าง Position แบบ static</h2>
+            <h5 class="ex-static">ค่าเริ่มต้นแสดงผลตามที่กำหนดตามเอกสาร</h5>
+        </div>
+
+        <div>
+            <h2>ตัวอย่าง Position แบบ Relative</h2>
+            <h5 class="ex-relative">วางตำแหน่งที่สามารถปรับแต่งตำแหน่งเพิ่มได้ </h5>
+        </div>
+
+        <div>
+            <h2>ตัวอย่าง Position แบบ fixed</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aperiam mollitia enim, vero asperiores distinctio! Mollitia voluptatem optio ut nobis saepe nemo aliquid veritatis aspernatur similique obcaecati quas, ullam blanditiis.</p>
+            <h5 class="ex-fixed"> Fixed ยึดตำแหน่งไม่ให้ element ขยับ</h5>
+        </div>
+
+        <div>
+            <h2>ตัวอย่าง Position แบบ Relative</h2>
+            <h5 class="ex-relative">Lorem ipsum dolor sit amet. <span class="ex-absolute">ใช้คู่กับ relative กำหนดตำแหน่งอ้างอิงตาม relative</span></h5>
+        </div>
+
+        <div>
+            <h2>ตัวอย่าง Position แบบ sticky</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur similique earum aspernatur maiores reiciendis quibusdam aliquid explicabo sequi eum nemo velit facilis veritatis sint in omnis molestiae natus rerum optio facere, cumque ab harum delectus quae. Sed qui beatae natus quas repudiandae, dicta quis officia exercitationem incidunt aperiam, adipisci corporis eligendi consequatur laudantium atque aliquid quam! Quod nulla inventore itaque magnam sint reiciendis, magni incidunt eos, optio suscipit quos eius qui nemo libero quis consequuntur similique molestiae nam dolorum voluptas dolore! Repudiandae optio nisi dicta possimus aliquid expedita impedit minus eos illo voluptate eum totam nulla, vitae dignissimos nemo, distinctio soluta aut facilis provident, et dolorum ducimus sed quis facere! Earum aliquam a dolorum odit nam eveniet dignissimos, illum assumenda sequi pariatur ipsa inventore quia placeat quibusdam! Maxime doloribus voluptate corporis explicabo accusantium sint ducimus illo! Optio, explicabo! Reprehenderit similique nobis cumque inventore quaerat consequatur. Laudantium beatae ratione ducimus corporis. Reprehenderit magnam consequuntur, quas eius iste consequatur impedit! Quisquam in tempore repellendus commodi omnis quas, ea quae blanditiis iure explicabo! Harum reiciendis deleniti dignissimos illum excepturi, porro rem enim sequi ullam asperiores, possimus laborum natus ut! Tempore, necessitatibus esse nobis reprehenderit a illum minima facere voluptatum eaque quasi, cupiditate modi. Veniam architecto nam alias placeat ipsum, ab velit neque molestias quasi, dolorem quidem maiores minima modi maxime sit voluptates quod non. At, accusantium nostrum repudiandae rerum officia veritatis dolore quaerat fugit facilis. Hic dolore corporis, reiciendis aliquid voluptatum laborum neque veniam eveniet? Molestiae ipsam illum vitae laborum libero ullam porro pariatur eveniet ratione veritatis dignissimos alias architecto hic labore corporis dolor culpa voluptate ad, consectetur delectus nostrum? Sit aliquam inventore iste debitis optio autem? Impedit recusandae quam quos velit sint sequi voluptate aspernatur, rerum, dolore ratione, quae consequuntur libero. Esse voluptas fugiat in et ipsam. Veritatis iste dolore ex, dolores perspiciatis, nihil nobis aliquid possimus animi molestias voluptatem minima molestiae vitae necessitatibus, vero sequi id. Modi ipsum, fugiat numquam eveniet quibusdam voluptas voluptatem veniam id ratione, aperiam quae voluptatum autem amet aliquam omnis vel assumenda esse? Deleniti ratione iusto delectus facilis cum ullam harum nemo, impedit nostrum. Corporis quod ad nulla voluptatem autem eius totam, quo sint nam. Eveniet omnis, obcaecati libero unde explicabo officiis maxime architecto, eius labore dolorem ab ad neque commodi atque! Itaque ut sint vero dolorem facilis repudiandae neque labore voluptas, in earum molestias odio exercitationem iusto eligendi vel modi! Dolore itaque repudiandae temporibus alias sunt.</p>
+            <h6 class="ex-sticky">อยู่ระหว่าง reletive กับ fixed สามารถกำหนดตำแหน่งในการยึดตำแหน่งนั่นๆได้</h6>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-CSS</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+        }
+        .container {
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            background: linear-gradient(0deg,#000,#262626);
+            position: relative;
+            text-align: center;
+        }
+        .container:before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#fff000,#ff0000,#fb0094,#0000ff,#00ff00,#fff000,#ff0000);
+            background-size: 400%;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            z-index: -1;
+            animation: lab 15s alternate infinite linear;
+            
+        }
+        p.test1 {
+            position: absolute;
+            font-family: Verdana, sans-serif;
+            font-size: 25px;
+            color: darkgrey;
+            text-transform: uppercase;
+            left: 40px;
+            animation: lab-1 5s 1s ease-in-out infinite;
+        }   
+        p.test2 {
+            position: relative;
+            font-family: Verdana, sans-serif;
+            font-size: 25px;
+            color: darkgrey;
+            text-transform: uppercase;
+            top: 80px;
+            animation: lab-2 10s 2s alternate infinite;
+        }   
+        p.test3 {
+            display: block;
+            position: relative;
+            font-family: Verdana, sans-serif;
+            font-size: 25px;
+            color: darkgrey;
+            text-transform: uppercase;
+            top: 190px;
+            animation: lab-3 5s 2s  linear alternate infinite;
+        } 
+       
+        @keyframes lab {
+            0% {
+                background-position: 0 0;
+                }
+            50% {
+                background-position: 100% 0;
+                }  
+            100% {
+                background-position: 0 0;
+                }
+        }
+
+        @keyframes lab-1 {
+            0% {
+                color: darkgrey;
+                text-shadow: 0 0 5px darkgrey;
+            }
+            25% {
+                color: darkviolet;
+                text-shadow: 0 0 5pxd darkviolet;
+            }
+            50% {
+                color: palevioletred;
+                text-shadow: 0 0 5px palevioletred;
+            }
+            75% {
+                color: darkviolet;
+                text-shadow: 0 0 5px darkviolet;
+            }
+            100% {
+                color: darkgrey;
+                text-shadow: 0 0 5px darkgrey;
+            }
+        }
+
+        @keyframes lab-2 {
+            0% {
+                color: darkgrey;
+                text-shadow: 0 0 5px lightgray;
+                top: 80px;
+            }
+            25% {
+                color: darkgrey;
+                text-shadow: 0 0 5px lightgray;
+                top: 200px;
+            }
+            50% {
+                color: whitesmoke;
+                text-shadow: 0 0 5px white;
+                top: 80px;
+            }
+            75% {
+                color: whitesmoke;
+                text-shadow: 0 0 5px white;
+                top: 200px;
+            }
+            100% {
+                color: darkgrey;
+                text-shadow: 0 0 5px lightgray;
+                top: 200px;
+            } 
+        }
+
+        @keyframes lab-3 {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                opacity: 50;
+            }
+            50% {
+                opacity: 75;
+            }
+            75% {
+                opacity: 100;
+            }
+            100% {
+                opacity: 100;
+            } 
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="bordertest">
+            <p class="test1">color changed</p>
+            <p class="test2">direction</p>
+            <p class="test3">hide and show</p>
+        </div>
+    </div>
+
+</body>
+</html>
