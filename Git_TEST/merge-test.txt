@@ -2,8 +2,7 @@ master commit 1
 
 main commit 1
 
-<<<<<<< HEAD
 main commit 2
-=======
 master commit 2
->>>>>>> master
+
+Done !!
