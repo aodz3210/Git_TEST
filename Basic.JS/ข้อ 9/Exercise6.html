@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+</head>
+<body>
+    <script>
+         
+        let player1 = +prompt ("Enter number between 1-100" ,0);
+       while (true) {
+        let player2 = +prompt ("Lets guess the lucky number !!", 0);
+        if (player1 != player2 && player1 < player2) {
+            alert ( `${player2} too high!!` ); 
+        } else if (player1 != player2 && player1 > player2) {
+            alert ( `${player2} too low!!` );
+        } else {
+            alert ( "WOW !! Congratulation !!" ); 
+            break;
+        }
+       } 
+
+
+    </script>
+</body> 
+</html> 
