@@ -1,5 +1,6 @@
 # Codecamp 8
 ## **ธนภัทร ลีลารุจิวงศ์**
 _______
-[GIT](https://docs.google.com/spreadsheets/d/1lLfT4o5QqWIca84KbgdiyhNyW_StfuyhdN7_v25TTaU/edit#gid=0)
+
+#### ผมทดลองทำทุก Lab แล้วครับ แต่ Lab สุดท้ายคำสั่งลบ ผมก็เลยลบไฟล์ที่ไม่ได้ใช้ไปด้วยแล้วครับ อยากให้มันสะอาดๆ เป็นระเบียบ.
 ______
