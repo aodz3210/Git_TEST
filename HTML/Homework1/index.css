@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 1px 10px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    display: inline-block;
+    box-shadow: 0 5px 10px black;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    background-image: url(https://www.img.in.th/images/cdbf985f0efa43ba0da6ef471a3de73c.png);
+}
+
+.gridbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.homepage {
+    text-align: center;
+}
+
+.homepage img:nth-child(2) {
+    width: 50%;
+    height: auto;
+}
+
+.homepage img:first-child {
+    width: 80%;
+    height: auto;
+    margin-top: 15%;
+}
+
+
+.profilehov {
+    content: url(https://www.img.in.th/images/c0de6130e33304b456918ded1157ef86.png);
+    width: 70%;
+    height: auto;
+    display: block;
+    position: relative;
+    max-width: 100%;
+    top: 20%;
+    left: 12%;
+    
+}
+
+.friendshov {
+    content: url(https://www.img.in.th/images/092f83797620347673af73bb06f250ff.png);
+    width: 70%;
+    height: auto;
+    display: block;
+    position: relative;
+    max-width: 100%;
+    top: 20%;
+    left: 18%;
+}
+
+.profilehov:hover {
+    content: url(https://www.img.in.th/images/d62e6738ba53b2abe7042a224b8ebf51.png);
+    width: 71%;
+}
+
+.friendshov:hover {
+    content: url(https://www.img.in.th/images/884cda64c592f413e8ff4acc34012e16.png);
+    width: 71%;
+}
+
+/* ---------------------------- homepage ----------------------------- */
+
+
+

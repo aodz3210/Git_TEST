@@ -1,0 +1,147 @@
+div.procontainer {
+    max-width: 100%;
+    height: auto;
+    font-family: cursive, fantasy, serif;
+    text-align: center;
+    color: darkred;
+    text-shadow: 2px 2px lightgray;
+    margin: auto;
+    border-radius: 20px 20px 50px 50px;
+    background-size: 95% auto;
+    background-repeat:no-repeat;
+    /* -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover; */
+    background-size:cover;
+    background-position:center;
+    background-image: url(https://www.img.in.th/images/c6967d239e5fd4739156b46225a68c46.png);
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 0.25fr 0.4fr 2fr 0.5fr;
+    max-width: 100%;
+    height: auto;
+}
+
+
+img.avatar, .pob, .aptitudepic, .hobbypic1, .hobbypic2 {
+    display: inline-block;
+    float: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.headcontent h1 {
+    margin: 20px 0;
+
+}
+
+.pob {
+    padding: 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.avatar {
+    width: 30%;
+    border-radius: 40% 40%;
+    border: 3px dotted darkred;
+    vertical-align: middle;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.boxcontent {
+    position: relative;
+    max-width: 100%;
+    margin-top: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.boxcontent .textonpic {
+    text-shadow: none;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: darkgray;
+    width: 100%;
+    height: auto;
+}
+
+img.pob {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.aptitude h2 {
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.aptitudepic {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-top: 15px;
+    padding: 0;
+    border:10px double salmon ;
+}
+
+.textbox p {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.hobbypic1 {
+    max-width: 100%;
+    height: auto;
+    width: 30%;
+    border-radius: 20px;
+    border: 10px double darkgrey;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.hobbypic2 {
+    max-width: 100%;
+    height: auto;
+    width: 40%;
+    border-radius: 50px;
+    border: 10px double darkseagreen;
+    padding: 0;
+}
+
+.backhome {
+    content: url(https://www.img.in.th/images/e0dfad995743da8411073d99ef33bb2b.png);
+    width: 20%;
+    position: relative;
+    top: 20%;
+    bottom: 0;
+    right: 20%;
+    
+}
+
+.gotofriends {
+    content: url(https://www.img.in.th/images/35e5b12f1b3a5c799ff24161a47d9e5d.png);
+    width: 20%;
+    position: relative;
+    top: 20%;
+    bottom: 0;
+    left: 20%;
+}
+
+.backhome:hover {
+    content: url(https://www.img.in.th/images/1f8ea1bf307785a148f5f155f4ddcc05.png);
+    width: 20%;
+}
+
+.gotofriends:hover {
+    content: url(https://www.img.in.th/images/4f68fe71508be6e1aa44f1a83d90db80.png);
+    width: 20%;
+}

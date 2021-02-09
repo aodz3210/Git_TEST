@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering Pizza Form</title>
+    <style>
+        body {
+            font-family: "Open Sans", Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        table {
+            margin: auto;
+            width: 429px;
+            height: 320px;
+        }
+
+        table, td, th {
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <form> 
+        <table>
+            <tr>
+                <th colspan="2">
+                    Pizza Shop 2.0
+                </th>
+            </tr>
+                <!-- Name -->
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <!-- Pizza Topping -->
+            <tr>
+                <td>
+                    Pizza Topping
+                </td>
+                <td>
+                    <input type="radio">Supreme</input><br>
+                    <input type="radio">Vegetarian</input><br>
+                    <input type="radio">Hawaiian</input>
+                </td>
+            </tr>
+            <!-- Pizza Sauce -->
+            <tr>
+                <td>
+                    Pizza Sauce
+                </td>
+                <td>
+                    <select>
+                        <option>
+                            Tomato
+                        </option>
+                        <option>
+                            Barbeque
+                        </option>
+                        <option>
+                            Mayonnaise
+                        </option>
+                        <option>
+                            Secret
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <!-- Optional Extras -->
+            <tr>
+                <td>
+                    Optional Extras
+                </td>
+                <td>
+                    <input type="checkbox">Extra Cheese</input>
+                    <input type="checkbox">Gluten Free Base</input>
+                </td>
+            </tr>
+            <!-- Delivery Instructions: -->
+            <tr>
+                <td colspan="2">
+                    Delivery Instructions:
+                    <textarea name="" id="" cols="60" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: none;">
+                    <input type="submit" value="Send my Order">
+                </td>
+            </tr>
+            
+        </table>      
+    </form>
+</body>
+</html>

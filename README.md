@@ -1,2 +1,6 @@
-# CC4-Day9-Homework
-ส่งใน Pull requests ของ Original Repository
+# Codecamp 8
+____
+___
+## Tanapat Leelarujiwong
+## ธนภัทร ลีลารุจิวงศ์ (อ๊อด)
+____
