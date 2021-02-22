@@ -40,6 +40,34 @@
         } console.log (compare)
     }
     
+    // Exercise 19 -----------------
+    function draw(n) {
+        let combine = "";
+        let result;
+        for(let row = 1; row <= n; row++) {
+            for(let column = n; column >= 1; column--) {
+                if(row >= column) {
+                    result = "*";
+                }else {
+                    result = "-";
+                }
+                combine += result
+            }
+            combine += "\n";
+        }
+        for(let row = n - 1; row >= 1; row--) {
+            for(let column = n; column >= 1; column--) {
+                if(row >= column) {
+                    result = "*";
+                }else {
+                    result = "-";
+                }
+                combine += result
+            }
+            combine += "\n";
+        }
+        alert(combine)
+    }
     </script>
 </body>
 </html>

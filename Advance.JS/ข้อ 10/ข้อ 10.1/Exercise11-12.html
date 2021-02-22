@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // Exercise 11 ---------------
+        // array1 = [
+        //     { name: "apple", birth: "2000-01-01" },
+        //     { name: "banana", birth: "1990-10-01" },
+        //     { name: "watermelon", birth: "1985-12-01" },
+        // ]
+        // array2 [
+        //     { name: "apple", birth: "2000-01-01", age: 19 },
+        //     { name: "banana", birth: "1990-10-01", age: 29 },
+        //     { name: "watermelon", birth: "1985-12-01", age: 33 },
+        // ] 
+
+
+        const array2 = array1.map( obj => {
+            let check = 
+                (obj.name === "apple")? {age :"19"} :
+                (obj.name === "banana")? {age: "29"} : {age: "34"};
+            return Object.assign(obj, check)
+        });    
+
+        
+        // Exercise 12 ---------------
+        // array1 = [
+        //     { name: "apple", birth: "2000-01-01" },
+        //     { name: "banana", birth: "1990-10-10" },
+        //     { name: "watermelon", birth: "1985-12-30" },
+        // ]
+        // array2 [
+        //     "<tr>
+        //     <td>apple</td> 
+        //     <td>01 jan 2000</td>
+        //     </tr>",
+        //     "<tr> <td>banana</td> <td>10 oct 1990</td> </tr>",
+        //     "<tr> <td>watermelon</td> <td>30 dec 1985</td> </tr>",
+        // ] 
+        
+        const array2 = array1.map( obj => { 
+            let date = ""
+            if (obj.name === "apple") {
+                date = "01 jan 2000";
+            } else if (obj.name === "banana") {
+                date = "10 oct 1990";
+            } else {
+                date = "30 dec 1985";
+            };
+            return `<tr> <td>${obj.name}</td> <td>${date}</td> </tr>`;
+        });
+
+
+
+        
+    </script>
+</body>
+</html>

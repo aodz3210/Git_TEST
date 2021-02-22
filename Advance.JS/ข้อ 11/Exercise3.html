@@ -1,0 +1,12 @@
+<script>
+
+let map = new Map();
+
+map.set("name", "John");
+
+let keys = map.keys();
+// let keys = Array.from(map.keys) ทำให้ keys เป็น Array ด้วยคำสั่ง Array.from
+// Error: keys.push is not a function
+keys.push("more");
+
+</script>

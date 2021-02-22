@@ -1,0 +1,31 @@
+<script>
+// ------------------ Exercise 1 ---------------------
+let salaries = {
+  "John": 100,
+  "Pete": 300,
+  "Mary": 250
+};
+
+function sumSalaries(salaries) {
+    let sum = 0;
+    for (let salary of Object.values(salaries)) {
+    sum += salary;
+    };
+    return sum;
+}
+alert( sumSalaries(salaries) ); // 650
+
+
+// ------------------ Exercise 2 ---------------------
+let user = {
+  name: 'John',
+  age: 30
+};
+
+count = user => (Object.values(user).length);
+
+
+alert( count(user) ); // 2
+
+
+</script>

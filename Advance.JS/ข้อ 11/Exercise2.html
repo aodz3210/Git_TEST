@@ -1,0 +1,17 @@
+<script>
+
+let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+function aclean(arr) { 
+    let result = new Map();
+    arr.pop()
+    for (const letters of arr) {
+        const words = letters.toLowerCase().split("").sort().join("");
+        result.set(words, letters);
+    }
+    return Array.from(result.values());
+} console.log (aclean(arr));
+
+alert( aclean(arr) ); // "nap,teachers,ear" or "PAN,cheaters,era"
+
+</script>

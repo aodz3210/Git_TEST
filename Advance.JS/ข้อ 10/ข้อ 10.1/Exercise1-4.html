@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Exercise 1 -------------------
+        // array1 = [1, 2, 30, 400]
+        // array2 [2, 4, 60, 800]
+        let array2 = array1.map( number => number*2);
+
+        // Exercise 2 -------------------
+        // array1 = [1, 2, 3, 4]
+        // array2 ["1", "2", "3", "4"]
+        let array2 = array1.map( number => `${number}`);
+
+        // Exercise 3 -------------------
+        // array1 = [1, "1", 2, {}] 
+        // array2 ["number", "string", "number", "object"]
+        let array2 = array1.map( value => typeof value);
+
+        // Exercise 4 -------------------
+        // array1 = ["apple", "banana", "orange"]
+        // array2 ["APPLE", "BANANA", "ORANGE"]
+        let array2 = array1.map( fruits => fruits.toUpperCase());
+
+    </script>
+</body>
+</html>

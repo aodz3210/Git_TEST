@@ -1,7 +1,7 @@
 div.procontainer {
     max-width: 100%;
     height: auto;
-    font-family: cursive, fantasy, serif;
+    font-family: cursive;
     text-align: center;
     color: darkred;
     text-shadow: 2px 2px lightgray;
@@ -13,7 +13,7 @@ div.procontainer {
     -moz-background-size:cover;
     -o-background-size:cover; */
     background-size:cover;
-    background-position:center;
+    background-position:center center;
     background-image: url(https://www.img.in.th/images/c6967d239e5fd4739156b46225a68c46.png);
 }
 
@@ -25,7 +25,7 @@ div.procontainer {
 }
 
 
-img.avatar, .pob, .aptitudepic, .hobbypic1, .hobbypic2 {
+.avatar, .pob, .aptitudepic, .hobbypic1, .hobbypic2 {
     display: inline-block;
     float: none;
     max-width: 100%;
